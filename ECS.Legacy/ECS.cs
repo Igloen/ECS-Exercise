@@ -3,7 +3,7 @@
     public class ECS
     {
         private int _threshold;
-        private readonly TempSensor _tempSensor;
+        private readonly TempSensor _tempSensor; //Afhængigheder. 
         private readonly Heater _heater;
 
         public ECS(int thr)
