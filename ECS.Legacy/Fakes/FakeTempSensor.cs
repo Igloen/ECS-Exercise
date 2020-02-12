@@ -10,12 +10,12 @@ namespace ECS.Legacy
     {
         public int GetTemp()
         {
-            throw new NotImplementedException();
+            return 28;
         }
 
         public bool RunSelfTest()
         {
-            throw new NotImplementedException();
+            return true;
         }
     }
 }
