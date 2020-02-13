@@ -1,12 +1,12 @@
 ﻿namespace ECS.Legacy
 {
-    public class ECS
+    public class ECSSys
     {
         private int _threshold;
         private readonly ITempSensor _tempSensor; //Afhængigheder. 
         private readonly IHeater _heater;
 
-        public ECS(int thr, ITempSensor tempSensor, IHeater heater) // Constructor injection. 
+        public ECSSys(int thr, ITempSensor tempSensor, IHeater heater) // Constructor injection. 
         {
             SetThreshold(thr);
             _tempSensor = tempSensor;

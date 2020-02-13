@@ -6,7 +6,7 @@ namespace ECS.Legacy
     {
         public static void Main(string[] args)
         {
-            var ecs = new ECS(28,new FakeTempSensor(), new FakeHeater());
+            var ecs = new ECSSys(28,new TempSensor(), new Heater());
 
             ecs.Regulate();
 
