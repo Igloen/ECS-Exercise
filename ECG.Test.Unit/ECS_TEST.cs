@@ -10,8 +10,7 @@ namespace ECS1.Test.Unit
 {
    [TestFixture]
     public class ECS_TEST
-    { 
-        
+    {
         [SetUp]
        public void Setup()
        {
