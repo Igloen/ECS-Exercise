@@ -13,10 +13,6 @@ namespace ECS1.Test.Unit
    [TestFixture]
     public class ECS_TEST
     {
-        private ECSSys uut_;
-        private FakeHeater heater;
-        private FakeTempSensor sensor;
-        
         [SetUp]
        public void Setup()
        {
