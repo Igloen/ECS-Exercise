@@ -13,6 +13,10 @@ namespace ECS1.Test.Unit
    [TestFixture]
     public class ECS_TEST
     {
+        private FakeHeater heater;
+        private FakeTempSensor sensor;
+        private ECSSys uut_;
+
         [SetUp]
        public void Setup()
        {
@@ -37,10 +41,11 @@ namespace ECS1.Test.Unit
         } //Vi tester at den rigtige metode bliver kaldt i heater-klassen
 
 
-        [TestCase(31, 30)]
+       [TestCase(31, 30)]
        [TestCase(92, 84)]
        [TestCase(25, 21)]
-       public void Regulate_TurnOn(int thr, int temp) //Vi tester at den rigtige metode bliver kaldt i heater-klassen
+       [TestCase(26, 21)]
+        public void Regulate_TurnOn(int thr, int temp) //Vi tester at den rigtige metode bliver kaldt i heater-klassen
        {
            sensor.temp = temp;
 
