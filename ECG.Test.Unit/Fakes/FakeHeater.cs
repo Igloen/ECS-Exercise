@@ -8,14 +8,16 @@ namespace ECS.Legacy
 {
     public class FakeHeater : IHeater
     {
+        public string status;
+
         public void TurnOn()
         {
-            throw new NotImplementedException();
+            status = "on";
         }
 
         public void TurnOff()
         {
-            throw new NotImplementedException();
+            status = "off";
         }
 
         public bool RunSelfTest()

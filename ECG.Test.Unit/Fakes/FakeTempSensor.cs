@@ -8,9 +8,10 @@ namespace ECS.Legacy
 {
     public class FakeTempSensor : ITempSensor
     {
+        public int temp = 28;
         public int GetTemp()
         {
-            return 28;
+            return temp;
         }
 
         public bool RunSelfTest()
